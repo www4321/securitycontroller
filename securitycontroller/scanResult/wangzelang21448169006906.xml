@@ -1,0 +1,138 @@
+<?xml version="1.0" ?>
+<!DOCTYPE niktoscan SYSTEM "D:\my_eclpse\securitycontroller\scanResult\dtd\nikto.dtd">
+<niktoscan hoststest="0" options="-h http://bbs.byr.cn -o /home/wangzelang/Downloads/nikto-2.1.5wangzelang21448169006906.xml" version="2.1.5" scanstart="Sat Nov 21 21:10:07 2015" scanend="Wed Dec 31 16:00:00 1969" scanelapsed=" seconds" nxmlversion="1.2">
+
+<scandetails targetip="10.3.18.66" targethostname="bbs.byr.cn" targetport="80" targetbanner="Apache/2.2.21 (Unix) PHP/5.3.10" starttime="2015-11-21 21:10:08" sitename="http://bbs.byr.cn:80" siteip="http://10.3.18.66:80" hostheader="bbs.byr.cn" errors="0" checks="6544">
+
+
+<item id="999986" osvdbid="0" osvdblink="http://osvdb.org/0" method="GET">
+<description><![CDATA[Retrieved x-powered-by header: PHP/5.3.10]]></description>
+<uri><![CDATA[/]]></uri>
+<namelink><![CDATA[http://bbs.byr.cn:80/]]></namelink>
+<iplink><![CDATA[http://10.3.18.66:80/]]></iplink>
+</item>
+
+<item id="999976" osvdbid="0" osvdblink="http://osvdb.org/0" method="GET">
+<description><![CDATA[The anti-clickjacking X-Frame-Options header is not present.]]></description>
+<uri><![CDATA[/]]></uri>
+<namelink><![CDATA[http://bbs.byr.cn:80/]]></namelink>
+<iplink><![CDATA[http://10.3.18.66:80/]]></iplink>
+</item>
+
+<item id="999960" osvdbid="0" osvdblink="http://osvdb.org/0" method="GET">
+<description><![CDATA[Cookie nforum[UTMPUSERID] created without the httponly flag]]></description>
+<uri><![CDATA[/]]></uri>
+<namelink><![CDATA[http://bbs.byr.cn:80/]]></namelink>
+<iplink><![CDATA[http://10.3.18.66:80/]]></iplink>
+</item>
+
+<item id="999960" osvdbid="0" osvdblink="http://osvdb.org/0" method="GET">
+<description><![CDATA[Cookie nforum[UTMPKEY] created without the httponly flag]]></description>
+<uri><![CDATA[/]]></uri>
+<namelink><![CDATA[http://bbs.byr.cn:80/]]></namelink>
+<iplink><![CDATA[http://10.3.18.66:80/]]></iplink>
+</item>
+
+<item id="999960" osvdbid="0" osvdblink="http://osvdb.org/0" method="GET">
+<description><![CDATA[Cookie nforum[UTMPNUM] created without the httponly flag]]></description>
+<uri><![CDATA[/]]></uri>
+<namelink><![CDATA[http://bbs.byr.cn:80/]]></namelink>
+<iplink><![CDATA[http://10.3.18.66:80/]]></iplink>
+</item>
+
+<item id="999984" osvdbid="0" osvdblink="http://osvdb.org/0" method="GET">
+<description><![CDATA[Server leaks inodes via ETags, header found with file /robots.txt, inode: 37372337, size: 267, mtime: 0x4ec3688a6c785]]></description>
+<uri><![CDATA[/robots.txt]]></uri>
+<namelink><![CDATA[http://bbs.byr.cn:80/robots.txt]]></namelink>
+<iplink><![CDATA[http://10.3.18.66:80/robots.txt]]></iplink>
+</item>
+
+<item id="999996" osvdbid="0" osvdblink="http://osvdb.org/0" method="GET">
+<description><![CDATA["robots.txt" contains 11 entries which should be manually viewed.]]></description>
+<uri><![CDATA[/robots.txt]]></uri>
+<namelink><![CDATA[http://bbs.byr.cn:80/robots.txt]]></namelink>
+<iplink><![CDATA[http://10.3.18.66:80/robots.txt]]></iplink>
+</item>
+
+<item id="999974" osvdbid="0" osvdblink="http://osvdb.org/0" method="GET">
+<description><![CDATA[/crossdomain.xml contains 1 line which should be manually viewed for improper domains or wildcards.]]></description>
+<uri><![CDATA[/crossdomain.xml]]></uri>
+<namelink><![CDATA[http://bbs.byr.cn:80/crossdomain.xml]]></namelink>
+<iplink><![CDATA[http://10.3.18.66:80/crossdomain.xml]]></iplink>
+</item>
+
+<item id="600050" osvdbid="0" osvdblink="http://osvdb.org/0" method="HEAD">
+<description><![CDATA[Apache/2.2.21 appears to be outdated (current is at least Apache/2.2.22). Apache 1.3.42 (final release) and 2.0.64 are also current.]]></description>
+<uri><![CDATA[/]]></uri>
+<namelink><![CDATA[http://bbs.byr.cn:80/]]></namelink>
+<iplink><![CDATA[http://10.3.18.66:80/]]></iplink>
+</item>
+
+<item id="600625" osvdbid="0" osvdblink="http://osvdb.org/0" method="HEAD">
+<description><![CDATA[PHP/5.3.10 appears to be outdated (current is at least 5.4.4)]]></description>
+<uri><![CDATA[/]]></uri>
+<namelink><![CDATA[http://bbs.byr.cn:80/]]></namelink>
+<iplink><![CDATA[http://10.3.18.66:80/]]></iplink>
+</item>
+
+<item id="999972" osvdbid="0" osvdblink="http://osvdb.org/0" method="DEBUG">
+<description><![CDATA[DEBUG HTTP verb may show server debugging information. See http://msdn.microsoft.com/en-us/library/e8z01xdh%28VS.80%29.aspx for details.]]></description>
+<uri><![CDATA[HASH(0x338a248)]]></uri>
+<namelink><![CDATA[http://bbs.byr.cn:80HASH(0x338a248)]]></namelink>
+<iplink><![CDATA[http://10.3.18.66:80HASH(0x338a248)]]></iplink>
+</item>
+
+<item id="999971" osvdbid="877" osvdblink="http://osvdb.org/877" method="TRACE">
+<description><![CDATA[HTTP TRACE method is active, suggesting the host is vulnerable to XST]]></description>
+<uri><![CDATA[/]]></uri>
+<namelink><![CDATA[http://bbs.byr.cn:80/]]></namelink>
+<iplink><![CDATA[http://10.3.18.66:80/]]></iplink>
+</item>
+
+<item id="001384" osvdbid="12184" osvdblink="http://osvdb.org/12184" method="GET">
+<description><![CDATA[/index.php?=PHPB8B5F2A0-3C92-11d3-A3A9-4C7B08C10000: PHP reveals potentially sensitive information via certain HTTP requests that contain specific QUERY strings.]]></description>
+<uri><![CDATA[/index.php?=PHPB8B5F2A0-3C92-11d3-A3A9-4C7B08C10000]]></uri>
+<namelink><![CDATA[http://bbs.byr.cn:80/index.php?=PHPB8B5F2A0-3C92-11d3-A3A9-4C7B08C10000]]></namelink>
+<iplink><![CDATA[http://10.3.18.66:80/index.php?=PHPB8B5F2A0-3C92-11d3-A3A9-4C7B08C10000]]></iplink>
+</item>
+
+<item id="001385" osvdbid="12184" osvdblink="http://osvdb.org/12184" method="GET">
+<description><![CDATA[/some.php?=PHPE9568F36-D428-11d2-A769-00AA001ACF42: PHP reveals potentially sensitive information via certain HTTP requests that contain specific QUERY strings.]]></description>
+<uri><![CDATA[/some.php?=PHPE9568F36-D428-11d2-A769-00AA001ACF42]]></uri>
+<namelink><![CDATA[http://bbs.byr.cn:80/some.php?=PHPE9568F36-D428-11d2-A769-00AA001ACF42]]></namelink>
+<iplink><![CDATA[http://10.3.18.66:80/some.php?=PHPE9568F36-D428-11d2-A769-00AA001ACF42]]></iplink>
+</item>
+
+<item id="001386" osvdbid="12184" osvdblink="http://osvdb.org/12184" method="GET">
+<description><![CDATA[/some.php?=PHPE9568F34-D428-11d2-A769-00AA001ACF42: PHP reveals potentially sensitive information via certain HTTP requests that contain specific QUERY strings.]]></description>
+<uri><![CDATA[/some.php?=PHPE9568F34-D428-11d2-A769-00AA001ACF42]]></uri>
+<namelink><![CDATA[http://bbs.byr.cn:80/some.php?=PHPE9568F34-D428-11d2-A769-00AA001ACF42]]></namelink>
+<iplink><![CDATA[http://10.3.18.66:80/some.php?=PHPE9568F34-D428-11d2-A769-00AA001ACF42]]></iplink>
+</item>
+
+<item id="001387" osvdbid="12184" osvdblink="http://osvdb.org/12184" method="GET">
+<description><![CDATA[/some.php?=PHPE9568F35-D428-11d2-A769-00AA001ACF42: PHP reveals potentially sensitive information via certain HTTP requests that contain specific QUERY strings.]]></description>
+<uri><![CDATA[/some.php?=PHPE9568F35-D428-11d2-A769-00AA001ACF42]]></uri>
+<namelink><![CDATA[http://bbs.byr.cn:80/some.php?=PHPE9568F35-D428-11d2-A769-00AA001ACF42]]></namelink>
+<iplink><![CDATA[http://10.3.18.66:80/some.php?=PHPE9568F35-D428-11d2-A769-00AA001ACF42]]></iplink>
+</item>
+
+<item id="002287" osvdbid="3093" osvdblink="http://osvdb.org/3093" method="GET">
+<description><![CDATA[/adv/gm001-mc/: This might be interesting... has been seen in web logs from an unknown scanner.]]></description>
+<uri><![CDATA[/adv/gm001-mc/]]></uri>
+<namelink><![CDATA[http://bbs.byr.cn:80/adv/gm001-mc/]]></namelink>
+<iplink><![CDATA[http://10.3.18.66:80/adv/gm001-mc/]]></iplink>
+</item>
+
+<item id="003784" osvdbid="3092" osvdblink="http://osvdb.org/3092" method="GET">
+<description><![CDATA[/sh/: This might be interesting... potential country code (Saint Helena)]]></description>
+<uri><![CDATA[/sh/]]></uri>
+<namelink><![CDATA[http://bbs.byr.cn:80/sh/]]></namelink>
+<iplink><![CDATA[http://10.3.18.66:80/sh/]]></iplink>
+</item>
+
+<statistics elapsed="155" itemsfound="18" itemstested="6544" endtime="2015-11-21 21:12:43" />
+</scandetails>
+
+
+</niktoscan>

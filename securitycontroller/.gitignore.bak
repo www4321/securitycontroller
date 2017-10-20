@@ -1,0 +1,26 @@
+*.class
+.classpath 
+bin/
+sc.sh
+target/
+*.class
+
+# Package Files #
+*.jar
+*.war
+*.ear
+backupfiles_ignored
+src.rar
+pom.out.xml
+pom.xmlbak1023
+script
+securitycontroller.sh
+
+#default config file
+config/securitycontroller.default.properties
+config/rabbitmq.properties
+
+# local starting shell script
+securitycontroller.sh
+/config/rabbitmq.properties
+/config/securitycontroller.default.properties

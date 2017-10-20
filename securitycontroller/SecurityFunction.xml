@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+        <SecurityFunctions>
+                <SecurityFunction name="webprotect" class="com.sds.securitycontroller.securityfunction.WebProtectSecurityFunction" allocator="com.sds.securitycontroller.securityfunction.securitydeviceallocator.DefaultSecurityDeviceAllocator"/>
+                <SecurityFunction name="webscan" class="com.sds.securitycontroller.securityfunction.WebScanSecurityFunction" allocator="com.sds.securitycontroller.securityfunction.securitydeviceallocator.DefaultSecurityDeviceAllocator"/>
+        </SecurityFunctions>
+
+        <SecurityDeviceDrivers>
+                <SecurityDeviceDriver class="com.sds.securitycontroller.securityfunction.securitydevicedriver.WAF_4sdnapi_0_0_0_1" />
+                <SecurityDeviceDriver class="com.sds.securitycontroller.securityfunction.securitydevicedriver.WVSS_4sdnapi_0_0_0_1" />
+        </SecurityDeviceDrivers>
+</root>

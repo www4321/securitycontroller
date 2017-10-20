@@ -1,0 +1,159 @@
+<?xml version="1.0" ?>
+<!DOCTYPE niktoscan SYSTEM "D:\my_eclpse\securitycontroller\scanResult\dtd\nikto.dtd">
+<niktoscan hoststest="0" options="-h http://sns.byr.edu.cn -o /home/linux/downloads/nikto-2.1.5/results/21448348524964.xml" version="2.1.5" scanstart="Mon Nov 23 23:02:08 2015" scanend="Wed Dec 31 16:00:00 1969" scanelapsed=" seconds" nxmlversion="1.2">
+
+<scandetails targetip="10.3.18.232" targethostname="sns.byr.edu.cn" targetport="80" targetbanner="Apache/2.2.17 (Unix) PHP/5.3.5" starttime="2015-11-23 23:02:08" sitename="http://sns.byr.edu.cn:80" siteip="http://10.3.18.232:80" hostheader="sns.byr.edu.cn" errors="0" checks="6544">
+
+
+<item id="999960" osvdbid="0" osvdblink="http://osvdb.org/0" method="GET">
+<description><![CDATA[Cookie uchome_auth created without the httponly flag]]></description>
+<uri><![CDATA[/]]></uri>
+<namelink><![CDATA[http://sns.byr.edu.cn:80/]]></namelink>
+<iplink><![CDATA[http://10.3.18.232:80/]]></iplink>
+</item>
+
+<item id="999986" osvdbid="0" osvdblink="http://osvdb.org/0" method="GET">
+<description><![CDATA[Retrieved x-powered-by header: PHP/5.3.5]]></description>
+<uri><![CDATA[/]]></uri>
+<namelink><![CDATA[http://sns.byr.edu.cn:80/]]></namelink>
+<iplink><![CDATA[http://10.3.18.232:80/]]></iplink>
+</item>
+
+<item id="999976" osvdbid="0" osvdblink="http://osvdb.org/0" method="GET">
+<description><![CDATA[The anti-clickjacking X-Frame-Options header is not present.]]></description>
+<uri><![CDATA[/]]></uri>
+<namelink><![CDATA[http://sns.byr.edu.cn:80/]]></namelink>
+<iplink><![CDATA[http://10.3.18.232:80/]]></iplink>
+</item>
+
+<item id="999984" osvdbid="0" osvdblink="http://osvdb.org/0" method="GET">
+<description><![CDATA[Server leaks inodes via ETags, header found with file /crossdomain.xml, inode: 8307196, size: 106, mtime: 0x49e062b1a9f40]]></description>
+<uri><![CDATA[/crossdomain.xml]]></uri>
+<namelink><![CDATA[http://sns.byr.edu.cn:80/crossdomain.xml]]></namelink>
+<iplink><![CDATA[http://10.3.18.232:80/crossdomain.xml]]></iplink>
+</item>
+
+<item id="999975" osvdbid="0" osvdblink="http://osvdb.org/0" method="GET">
+<description><![CDATA[/crossdomain.xml contains a full wildcard entry. See http://jeremiahgrossman.blogspot.com/2008/05/crossdomainxml-invites-cross-site.html]]></description>
+<uri><![CDATA[/crossdomain.xml]]></uri>
+<namelink><![CDATA[http://sns.byr.edu.cn:80/crossdomain.xml]]></namelink>
+<iplink><![CDATA[http://10.3.18.232:80/crossdomain.xml]]></iplink>
+</item>
+
+<item id="999974" osvdbid="0" osvdblink="http://osvdb.org/0" method="GET">
+<description><![CDATA[/crossdomain.xml contains 0 line which should be manually viewed for improper domains or wildcards.]]></description>
+<uri><![CDATA[/crossdomain.xml]]></uri>
+<namelink><![CDATA[http://sns.byr.edu.cn:80/crossdomain.xml]]></namelink>
+<iplink><![CDATA[http://10.3.18.232:80/crossdomain.xml]]></iplink>
+</item>
+
+<item id="999996" osvdbid="0" osvdblink="http://osvdb.org/0" method="GET">
+<description><![CDATA["robots.txt" contains 1 entry which should be manually viewed.]]></description>
+<uri><![CDATA[/robots.txt]]></uri>
+<namelink><![CDATA[http://sns.byr.edu.cn:80/robots.txt]]></namelink>
+<iplink><![CDATA[http://10.3.18.232:80/robots.txt]]></iplink>
+</item>
+
+<item id="600625" osvdbid="0" osvdblink="http://osvdb.org/0" method="HEAD">
+<description><![CDATA[PHP/5.3.5 appears to be outdated (current is at least 5.4.4)]]></description>
+<uri><![CDATA[/]]></uri>
+<namelink><![CDATA[http://sns.byr.edu.cn:80/]]></namelink>
+<iplink><![CDATA[http://10.3.18.232:80/]]></iplink>
+</item>
+
+<item id="600050" osvdbid="0" osvdblink="http://osvdb.org/0" method="HEAD">
+<description><![CDATA[Apache/2.2.17 appears to be outdated (current is at least Apache/2.2.22). Apache 1.3.42 (final release) and 2.0.64 are also current.]]></description>
+<uri><![CDATA[/]]></uri>
+<namelink><![CDATA[http://sns.byr.edu.cn:80/]]></namelink>
+<iplink><![CDATA[http://10.3.18.232:80/]]></iplink>
+</item>
+
+<item id="999972" osvdbid="0" osvdblink="http://osvdb.org/0" method="DEBUG">
+<description><![CDATA[DEBUG HTTP verb may show server debugging information. See http://msdn.microsoft.com/en-us/library/e8z01xdh%28VS.80%29.aspx for details.]]></description>
+<uri><![CDATA[HASH(0x8d8d290)]]></uri>
+<namelink><![CDATA[http://sns.byr.edu.cn:80HASH(0x8d8d290)]]></namelink>
+<iplink><![CDATA[http://10.3.18.232:80HASH(0x8d8d290)]]></iplink>
+</item>
+
+<item id="999971" osvdbid="877" osvdblink="http://osvdb.org/877" method="TRACE">
+<description><![CDATA[HTTP TRACE method is active, suggesting the host is vulnerable to XST]]></description>
+<uri><![CDATA[/]]></uri>
+<namelink><![CDATA[http://sns.byr.edu.cn:80/]]></namelink>
+<iplink><![CDATA[http://10.3.18.232:80/]]></iplink>
+</item>
+
+<item id="000997" osvdbid="0" osvdblink="http://osvdb.org/0" method="GET">
+<description><![CDATA[/config.php: PHP Config file may contain database IDs and passwords.]]></description>
+<uri><![CDATA[/config.php]]></uri>
+<namelink><![CDATA[http://sns.byr.edu.cn:80/config.php]]></namelink>
+<iplink><![CDATA[http://10.3.18.232:80/config.php]]></iplink>
+</item>
+
+<item id="001384" osvdbid="12184" osvdblink="http://osvdb.org/12184" method="GET">
+<description><![CDATA[/index.php?=PHPB8B5F2A0-3C92-11d3-A3A9-4C7B08C10000: PHP reveals potentially sensitive information via certain HTTP requests that contain specific QUERY strings.]]></description>
+<uri><![CDATA[/index.php?=PHPB8B5F2A0-3C92-11d3-A3A9-4C7B08C10000]]></uri>
+<namelink><![CDATA[http://sns.byr.edu.cn:80/index.php?=PHPB8B5F2A0-3C92-11d3-A3A9-4C7B08C10000]]></namelink>
+<iplink><![CDATA[http://10.3.18.232:80/index.php?=PHPB8B5F2A0-3C92-11d3-A3A9-4C7B08C10000]]></iplink>
+</item>
+
+<item id="001551" osvdbid="3092" osvdblink="http://osvdb.org/3092" method="GET">
+<description><![CDATA[/admin/: This might be interesting...]]></description>
+<uri><![CDATA[/admin/]]></uri>
+<namelink><![CDATA[http://sns.byr.edu.cn:80/admin/]]></namelink>
+<iplink><![CDATA[http://10.3.18.232:80/admin/]]></iplink>
+</item>
+
+<item id="001637" osvdbid="3092" osvdblink="http://osvdb.org/3092" method="GET">
+<description><![CDATA[/data/: This might be interesting...]]></description>
+<uri><![CDATA[/data/]]></uri>
+<namelink><![CDATA[http://sns.byr.edu.cn:80/data/]]></namelink>
+<iplink><![CDATA[http://10.3.18.232:80/data/]]></iplink>
+</item>
+
+<item id="001709" osvdbid="3092" osvdblink="http://osvdb.org/3092" method="GET">
+<description><![CDATA[/install/: This might be interesting...]]></description>
+<uri><![CDATA[/install/]]></uri>
+<namelink><![CDATA[http://sns.byr.edu.cn:80/install/]]></namelink>
+<iplink><![CDATA[http://10.3.18.232:80/install/]]></iplink>
+</item>
+
+<item id="003575" osvdbid="3092" osvdblink="http://osvdb.org/3092" method="GET">
+<description><![CDATA[/xmlrpc.php: xmlrpc.php was found.]]></description>
+<uri><![CDATA[/xmlrpc.php]]></uri>
+<namelink><![CDATA[http://sns.byr.edu.cn:80/xmlrpc.php]]></namelink>
+<iplink><![CDATA[http://10.3.18.232:80/xmlrpc.php]]></iplink>
+</item>
+
+<item id="999960" osvdbid="0" osvdblink="http://osvdb.org/0" method="GET">
+<description><![CDATA[Cookie uchome__refer created without the httponly flag]]></description>
+<uri><![CDATA[/cp.php]]></uri>
+<namelink><![CDATA[http://sns.byr.edu.cn:80/cp.php]]></namelink>
+<iplink><![CDATA[http://10.3.18.232:80/cp.php]]></iplink>
+</item>
+
+<item id="006311" osvdbid="0" osvdblink="http://osvdb.org/0" method="GET">
+<description><![CDATA[/cp.php: Admin login page/section found.]]></description>
+<uri><![CDATA[/cp.php]]></uri>
+<namelink><![CDATA[http://sns.byr.edu.cn:80/cp.php]]></namelink>
+<iplink><![CDATA[http://10.3.18.232:80/cp.php]]></iplink>
+</item>
+
+<item id="006425" osvdbid="3092" osvdblink="http://osvdb.org/3092" method="GET">
+<description><![CDATA[/test.php: This might be interesting...]]></description>
+<uri><![CDATA[/test.php]]></uri>
+<namelink><![CDATA[http://sns.byr.edu.cn:80/test.php]]></namelink>
+<iplink><![CDATA[http://10.3.18.232:80/test.php]]></iplink>
+</item>
+
+<item id="006442" osvdbid="0" osvdblink="http://osvdb.org/0" method="GET">
+<description><![CDATA[/help.php: A help file was found.]]></description>
+<uri><![CDATA[/help.php]]></uri>
+<namelink><![CDATA[http://sns.byr.edu.cn:80/help.php]]></namelink>
+<iplink><![CDATA[http://10.3.18.232:80/help.php]]></iplink>
+</item>
+
+<statistics elapsed="29" itemsfound="21" itemstested="6544" endtime="2015-11-23 23:02:37" />
+</scandetails>
+
+
+</niktoscan>

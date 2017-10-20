@@ -1,0 +1,52 @@
+securitycontroller.modules = com.sds.securitycontroller.core.SecurityControllerProvider,\
+com.sds.securitycontroller.service.registry.RegistryManager,\
+com.sds.securitycontroller.flow.manager.FlowMonitor,\
+com.sds.securitycontroller.policy.resolver.PolicyResolver,\
+com.sds.securitycontroller.storage.jdbc.JDBCSqlStorageSource,\
+com.sds.securitycontroller.event.manager.MQEventScheduler,\
+com.sds.securitycontroller.storage.mongodb.MongoDBStorageSource,\
+com.sds.securitycontroller.threadpool.ThreadPool
+securitycontroller.generalparam.nchost = http://nc.research.intra.sds.com:8081
+securitycontroller.generalparam.iaashost = http://os.research.intra.sds.com
+securitycontroller.generalparam.scdir = /usr/src/securitycontroller
+com.sds.securitycontroller.restserver.RestApiServer.port = 8888
+com.sds.securitycontroller.core.SecurityControllerProvider.scport = 7777
+com.sds.securitycontroller.storage.jdbc.JDBCSqlStorageSource.dbdriver = mysql
+com.sds.securitycontroller.storage.jdbc.JDBCSqlStorageSource.dbhost = db.research.intra.sds.com
+com.sds.securitycontroller.storage.jdbc.JDBCSqlStorageSource.dbport = 3306
+com.sds.securitycontroller.storage.jdbc.JDBCSqlStorageSource.dbname = securitycontroller
+com.sds.securitycontroller.storage.jdbc.JDBCSqlStorageSource.dbuser = controller
+com.sds.securitycontroller.storage.jdbc.JDBCSqlStorageSource.dbpass = sds
+com.sds.securitycontroller.storage.mongodb.MongoDBStorageSource.dbhost = db.research.intra.sds.com
+com.sds.securitycontroller.storage.mongodb.MongoDBStorageSource.dbport = 27017
+com.sds.securitycontroller.storage.mongodb.MongoDBStorageSource.dbname = securitycontroller
+com.sds.securitycontroller.flow.manager.FlowPollingService.flowUrl = [nchost]/wm/core/switch/[sw]/flow/json
+com.sds.securitycontroller.flow.manager.FlowPollingService.switchUrl = [nchost]/wm/core/controller/switches/json
+com.sds.securitycontroller.flow.manager.FlowPollingService.pollingInterval = 3
+com.sds.securitycontroller.flow.manager.FlowPollingService.pollingFromSeperateSW = false
+com.sds.securitycontroller.flow.manager.FlowPollingService.saveFlowsToDB = true
+com.sds.securitycontroller.flow.manager.FlowPollingService.dbdriver = com.sds.securitycontroller.storage.mongodb.MongoDBStorageSource
+com.sds.securitycontroller.flow.manager.FlowMonitor.mode = local
+com.sds.securitycontroller.flow.manager.FlowMonitor.processorCount = 6
+com.sds.securitycontroller.flow.manager.FlowMonitor.pusherCount = 6
+com.sds.securitycontroller.flow.manager.FlowMonitor.enableMonitoringWithoutSubscriptions = false
+com.sds.securitycontroller.flow.manager.FlowMonitor.enableHistoryCacheMonitoring = false
+com.sds.securitycontroller.flow.manager.FlowMonitor.pushingResult = true
+com.sds.securitycontroller.flow.manager.FlowMonitor.builtInADSPolicyGenerator = false
+com.sds.securitycontroller.flow.manager.FlowMonitor.historyCacheTime = 60
+com.sds.securitycontroller.flow.manager.FlowMonitor.enableTrafficOverseeing = false
+com.sds.securitycontroller.flow.manager.FlowMonitor.scriptBase = [scdir]/script/
+com.sds.securitycontroller.flow.manager.FlowMonitor.dbdriver = com.sds.securitycontroller.storage.mongodb.MongoDBStorageSourcecom.sds.securitycontroller.app.manager.AppManager.dbdriver = com.sds.securitycontroller.storage.jdbc.JDBCSqlStorageSource
+com.sds.securitycontroller.policy.resolver.PolicyResolver.commandUrl = [nchost]/wm/securitycontrolleragent/policyaction
+com.sds.securitycontroller.policy.resolver.PolicyResolver.localCommandPusher = false
+com.sds.securitycontroller.knowledge.networkcontroller.agent.NetworkcontrollerAgent.nchost = [nchost]
+com.sds.securitycontroller.knowledge.cloud.agent.OpenstackClient.authUrl = [iaashost]:35357/v2.0
+com.sds.securitycontroller.knowledge.cloud.agent.OpenstackClient.quantumUrl = [iaashost]:9696/v2.0
+com.sds.securitycontroller.knowledge.cloud.agent.OpenstackClient.novaUrl = [iaashost]:8774/v2
+com.sds.securitycontroller.knowledge.cloud.agent.OpenstackClient.cloudAgentCommandUrl = [nchost]/wm/securitycontrolleragent/policyaction
+com.sds.securitycontroller.knowledge.physical.agent.PhysicalUserAgent.userManagerHost = http://admin.byod.research.intra.sds.com
+com.sds.securitycontroller.knowledge.physical.agent.PhysicalUserAgent.userManagerUri = /sessions/
+com.sds.securitycontroller.log.manager.LogManager.dbdriver = com.sds.securitycontroller.storage.mongodb.MongoDBStorageSource
+com.sds.securitycontroller.knowledge.globaltraffic.analyzer.GlobalTrafficAnalyzer.dbdriver = com.sds.securitycontroller.storage.jdbc.JDBCSqlStorageSource
+com.sds.securitycontroller.knowledge.globaltraffic.analyzer.GlobalTrafficAnalyzer.recordInterval = 3
+com.sds.securitycontroller.service.registry.RegistryManager.registerInterval = 10

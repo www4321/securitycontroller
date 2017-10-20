@@ -1,0 +1,4 @@
+2014-08-06 13:27:45,864   ERROR [main] COMPILER: [null:1]: Schema file ended mid-statement (no semicolon found).
+2014-08-06 13:28:01,287   ERROR [main] COMPILER: [null:1]: DDL Error: "unexpected token: KEY" in statement starting on lineno: 1
+2014-08-06 13:28:19,120   ERROR [main] COMPILER: [null:1]: DDL Error: "unexpected token: FLOW_KEY" in statement starting on lineno: 1
+2014-08-06 13:28:35,129   INFO  [main] COMPILER: [FLOW_KEYS.insert]: Compiling Statement: INSERT INTO FLOW_KEYS VALUES (?, ?, ?, ?, ?, ?, ?, ?);

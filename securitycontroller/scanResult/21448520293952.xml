@@ -1,0 +1,131 @@
+<?xml version="1.0" ?>
+<!DOCTYPE niktoscan SYSTEM "D:\my_eclpse\securitycontroller\scanResult\dtd\nikto.dtd">
+<niktoscan hoststest="0" options="-h http://www.baidu.com -o /home/linux/downloads/nikto-2.1.5/results/21448520293952.xml" version="2.1.5" scanstart="Wed Nov 25 22:44:56 2015" scanend="Wed Dec 31 16:00:00 1969" scanelapsed=" seconds" nxmlversion="1.2">
+
+<scandetails targetip="61.135.169.121" targethostname="www.baidu.com" targetport="80" targetbanner="BWS/1.1" starttime="2015-11-25 22:44:57" sitename="http://www.baidu.com:80" siteip="http://61.135.169.121:80" hostheader="www.baidu.com" errors="0" checks="6544">
+
+
+<item id="999960" osvdbid="0" osvdblink="http://osvdb.org/0" method="GET">
+<description><![CDATA[Cookie BAIDUID created without the httponly flag]]></description>
+<uri><![CDATA[/]]></uri>
+<namelink><![CDATA[http://www.baidu.com:80/]]></namelink>
+<iplink><![CDATA[http://61.135.169.121:80/]]></iplink>
+</item>
+
+<item id="999960" osvdbid="0" osvdblink="http://osvdb.org/0" method="GET">
+<description><![CDATA[Cookie BIDUPSID created without the httponly flag]]></description>
+<uri><![CDATA[/]]></uri>
+<namelink><![CDATA[http://www.baidu.com:80/]]></namelink>
+<iplink><![CDATA[http://61.135.169.121:80/]]></iplink>
+</item>
+
+<item id="999960" osvdbid="0" osvdblink="http://osvdb.org/0" method="GET">
+<description><![CDATA[Cookie PSTM created without the httponly flag]]></description>
+<uri><![CDATA[/]]></uri>
+<namelink><![CDATA[http://www.baidu.com:80/]]></namelink>
+<iplink><![CDATA[http://61.135.169.121:80/]]></iplink>
+</item>
+
+<item id="999960" osvdbid="0" osvdblink="http://osvdb.org/0" method="GET">
+<description><![CDATA[Cookie BDSVRTM created without the httponly flag]]></description>
+<uri><![CDATA[/]]></uri>
+<namelink><![CDATA[http://www.baidu.com:80/]]></namelink>
+<iplink><![CDATA[http://61.135.169.121:80/]]></iplink>
+</item>
+
+<item id="999976" osvdbid="0" osvdblink="http://osvdb.org/0" method="GET">
+<description><![CDATA[The anti-clickjacking X-Frame-Options header is not present.]]></description>
+<uri><![CDATA[/]]></uri>
+<namelink><![CDATA[http://www.baidu.com:80/]]></namelink>
+<iplink><![CDATA[http://61.135.169.121:80/]]></iplink>
+</item>
+
+<item id="999100" osvdbid="0" osvdblink="http://osvdb.org/0" method="GET">
+<description><![CDATA[Uncommon header 'bdpagetype' found, with contents: 1]]></description>
+<uri><![CDATA[/]]></uri>
+<namelink><![CDATA[http://www.baidu.com:80/]]></namelink>
+<iplink><![CDATA[http://61.135.169.121:80/]]></iplink>
+</item>
+
+<item id="999100" osvdbid="0" osvdblink="http://osvdb.org/0" method="GET">
+<description><![CDATA[Uncommon header 'x-ua-compatible' found, with contents: IE=Edge,chrome=1]]></description>
+<uri><![CDATA[/]]></uri>
+<namelink><![CDATA[http://www.baidu.com:80/]]></namelink>
+<iplink><![CDATA[http://61.135.169.121:80/]]></iplink>
+</item>
+
+<item id="999100" osvdbid="0" osvdblink="http://osvdb.org/0" method="GET">
+<description><![CDATA[Uncommon header 'bduserid' found, with contents: 0]]></description>
+<uri><![CDATA[/]]></uri>
+<namelink><![CDATA[http://www.baidu.com:80/]]></namelink>
+<iplink><![CDATA[http://61.135.169.121:80/]]></iplink>
+</item>
+
+<item id="999100" osvdbid="0" osvdblink="http://osvdb.org/0" method="GET">
+<description><![CDATA[Uncommon header 'bdqid' found, with contents: 0xb90779220001d7cb]]></description>
+<uri><![CDATA[/]]></uri>
+<namelink><![CDATA[http://www.baidu.com:80/]]></namelink>
+<iplink><![CDATA[http://61.135.169.121:80/]]></iplink>
+</item>
+
+<item id="999984" osvdbid="0" osvdblink="http://osvdb.org/0" method="GET">
+<description><![CDATA[Server leaks inodes via ETags, header found with file /robots.txt, fields: 0x91e 0x50b02db060c00 ]]></description>
+<uri><![CDATA[/robots.txt]]></uri>
+<namelink><![CDATA[http://www.baidu.com:80/robots.txt]]></namelink>
+<iplink><![CDATA[http://61.135.169.121:80/robots.txt]]></iplink>
+</item>
+
+<item id="999996" osvdbid="0" osvdblink="http://osvdb.org/0" method="GET">
+<description><![CDATA[File/dir '/shifen/' in robots.txt returned a non-forbidden or redirect HTTP code (200)]]></description>
+<uri><![CDATA[//shifen/]]></uri>
+<namelink><![CDATA[http://www.baidu.com:80//shifen/]]></namelink>
+<iplink><![CDATA[http://61.135.169.121:80//shifen/]]></iplink>
+</item>
+
+<item id="999996" osvdbid="0" osvdblink="http://osvdb.org/0" method="GET">
+<description><![CDATA[File/dir '/' in robots.txt returned a non-forbidden or redirect HTTP code (200)]]></description>
+<uri><![CDATA[//]]></uri>
+<namelink><![CDATA[http://www.baidu.com:80//]]></namelink>
+<iplink><![CDATA[http://61.135.169.121:80//]]></iplink>
+</item>
+
+<item id="999996" osvdbid="0" osvdblink="http://osvdb.org/0" method="GET">
+<description><![CDATA["robots.txt" contains 103 entries which should be manually viewed.]]></description>
+<uri><![CDATA[/robots.txt]]></uri>
+<namelink><![CDATA[http://www.baidu.com:80/robots.txt]]></namelink>
+<iplink><![CDATA[http://61.135.169.121:80/robots.txt]]></iplink>
+</item>
+
+<item id="740000" osvdbid="0" osvdblink="http://osvdb.org/0" method="GET">
+<description><![CDATA[Multiple index files found: index.htm, index.html, index.php]]></description>
+<uri><![CDATA[/]]></uri>
+<namelink><![CDATA[http://www.baidu.com:80/]]></namelink>
+<iplink><![CDATA[http://61.135.169.121:80/]]></iplink>
+</item>
+
+<item id="999987" osvdbid="5737" osvdblink="http://osvdb.org/5737" method="GET">
+<description><![CDATA[WebLogic may reveal its internal IP or hostname in the Location header. The value is "http://www.baidu.com/search/error.html".]]></description>
+<uri><![CDATA[.]]></uri>
+<namelink><![CDATA[http://www.baidu.com:80.]]></namelink>
+<iplink><![CDATA[http://61.135.169.121:80.]]></iplink>
+</item>
+
+<item id="001687" osvdbid="3092" osvdblink="http://osvdb.org/3092" method="GET">
+<description><![CDATA[/home/: This might be interesting...]]></description>
+<uri><![CDATA[/home/]]></uri>
+<namelink><![CDATA[http://www.baidu.com:80/home/]]></namelink>
+<iplink><![CDATA[http://61.135.169.121:80/home/]]></iplink>
+</item>
+
+<item id="003814" osvdbid="3092" osvdblink="http://osvdb.org/3092" method="GET">
+<description><![CDATA[/tw/: This might be interesting... potential country code (Taiwan)]]></description>
+<uri><![CDATA[/tw/]]></uri>
+<namelink><![CDATA[http://www.baidu.com:80/tw/]]></namelink>
+<iplink><![CDATA[http://61.135.169.121:80/tw/]]></iplink>
+</item>
+
+<statistics elapsed="101" itemsfound="17" itemstested="6544" endtime="2015-11-25 22:46:38" />
+</scandetails>
+
+
+</niktoscan>

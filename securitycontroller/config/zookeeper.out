@@ -1,0 +1,38 @@
+2015-04-03 20:36:55,855 [myid:] - INFO  [main:QuorumPeerConfig@103] - Reading configuration from: /usr/lib/zookeeper-3.4.6/bin/../conf/zoo.cfg
+2015-04-03 20:36:55,861 [myid:] - INFO  [main:DatadirCleanupManager@78] - autopurge.snapRetainCount set to 3
+2015-04-03 20:36:55,862 [myid:] - INFO  [main:DatadirCleanupManager@79] - autopurge.purgeInterval set to 0
+2015-04-03 20:36:55,862 [myid:] - INFO  [main:DatadirCleanupManager@101] - Purge task is not scheduled.
+2015-04-03 20:36:55,863 [myid:] - WARN  [main:QuorumPeerMain@113] - Either no config or no quorum defined in config, running  in standalone mode
+2015-04-03 20:36:55,882 [myid:] - INFO  [main:QuorumPeerConfig@103] - Reading configuration from: /usr/lib/zookeeper-3.4.6/bin/../conf/zoo.cfg
+2015-04-03 20:36:55,883 [myid:] - INFO  [main:ZooKeeperServerMain@95] - Starting server
+2015-04-03 20:36:55,891 [myid:] - INFO  [main:Environment@100] - Server environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+2015-04-03 20:36:55,891 [myid:] - INFO  [main:Environment@100] - Server environment:host.name=vaio
+2015-04-03 20:36:55,891 [myid:] - INFO  [main:Environment@100] - Server environment:java.version=1.8.0_20
+2015-04-03 20:36:55,891 [myid:] - INFO  [main:Environment@100] - Server environment:java.vendor=Oracle Corporation
+2015-04-03 20:36:55,892 [myid:] - INFO  [main:Environment@100] - Server environment:java.home=/usr/lib/jvm/jdk1.8.0_20/jre
+2015-04-03 20:36:55,892 [myid:] - INFO  [main:Environment@100] - Server environment:java.class.path=/usr/lib/zookeeper-3.4.6/bin/../build/classes:/usr/lib/zookeeper-3.4.6/bin/../build/lib/*.jar:/usr/lib/zookeeper-3.4.6/bin/../lib/slf4j-log4j12-1.6.1.jar:/usr/lib/zookeeper-3.4.6/bin/../lib/slf4j-api-1.6.1.jar:/usr/lib/zookeeper-3.4.6/bin/../lib/netty-3.7.0.Final.jar:/usr/lib/zookeeper-3.4.6/bin/../lib/log4j-1.2.16.jar:/usr/lib/zookeeper-3.4.6/bin/../lib/jline-0.9.94.jar:/usr/lib/zookeeper-3.4.6/bin/../zookeeper-3.4.6.jar:/usr/lib/zookeeper-3.4.6/bin/../src/java/lib/*.jar:/usr/lib/zookeeper-3.4.6/bin/../conf:
+2015-04-03 20:36:55,892 [myid:] - INFO  [main:Environment@100] - Server environment:java.library.path=/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+2015-04-03 20:36:55,892 [myid:] - INFO  [main:Environment@100] - Server environment:java.io.tmpdir=/tmp
+2015-04-03 20:36:55,892 [myid:] - INFO  [main:Environment@100] - Server environment:java.compiler=<NA>
+2015-04-03 20:36:55,894 [myid:] - INFO  [main:Environment@100] - Server environment:os.name=Linux
+2015-04-03 20:36:55,894 [myid:] - INFO  [main:Environment@100] - Server environment:os.arch=amd64
+2015-04-03 20:36:55,895 [myid:] - INFO  [main:Environment@100] - Server environment:os.version=3.16.0-33-generic
+2015-04-03 20:36:55,895 [myid:] - INFO  [main:Environment@100] - Server environment:user.name=root
+2015-04-03 20:36:55,895 [myid:] - INFO  [main:Environment@100] - Server environment:user.home=/root
+2015-04-03 20:36:55,895 [myid:] - INFO  [main:Environment@100] - Server environment:user.dir=/tmp/securitycontroller.git/config
+2015-04-03 20:36:55,907 [myid:] - INFO  [main:ZooKeeperServer@755] - tickTime set to 2000
+2015-04-03 20:36:55,907 [myid:] - INFO  [main:ZooKeeperServer@764] - minSessionTimeout set to -1
+2015-04-03 20:36:55,907 [myid:] - INFO  [main:ZooKeeperServer@773] - maxSessionTimeout set to -1
+2015-04-03 20:36:55,934 [myid:] - INFO  [main:NIOServerCnxnFactory@94] - binding to port 0.0.0.0/0.0.0.0:2181
+2015-2015-04-03 20:37:54,633 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /127.0.0.1:44060
+2015-04-03 20:37:54,707 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@868] - Client attempting to establish new session at /127.0.0.1:44060
+2015-04-03 20:37:54,709 [myid:] - INFO  [SyncThread:0:FileTxnLog@199] - Creating new log file: log.92
+2015-04-03 20:37:54,733 [myid:] - ERROR [SyncThread:0:SyncRequestProcessor@183] - Severe unrecoverable error, exiting
+java.io.FileNotFoundException: /var/lib/zookeeper/version-2/log.92 (Permission denied)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:162)
+	at org.apache.zookeeper.server.persistence.FileTxnLog.append(FileTxnLog.java:205)
+	at org.apache.zookeeper.server.persistence.FileTxnSnapLog.append(FileTxnSnapLog.java:314)
+	at org.apache.zookeeper.server.ZKDatabase.append(ZKDatabase.java:476)
+	at org.apache.zookeeper.server.SyncRequestProcessor.run(SyncRequestProcessor.java:140)

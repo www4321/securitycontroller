@@ -1,0 +1,26 @@
+*.class
+*.iml
+sc.sh
+target/
+bin/
+.idea/
+
+# Package Files #
+.classpath 
+.project
+#*.jar
+*.war
+*.ear
+
+backupfiles_ignored
+*.rar
+script
+securitycontroller.sh
+
+#default config file
+config/securitycontroller.default.properties
+config/global.config
+config/rabbitmq.properties
+
+# local starting shell script
+securitycontroller.sh

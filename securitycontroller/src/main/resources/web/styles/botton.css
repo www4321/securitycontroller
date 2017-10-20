@@ -1,0 +1,102 @@
+INPUT.normal{
+	BACKGROUND: url(../images/search_input.gif);
+	border:1px solid #a0b700;
+	color:#657a7d;
+	FONT-SIZE: 12px;
+	FONT-STYLE: normal;
+	FONT-VARIANT: normal;
+	FONT-WEIGHT: normal;
+	HEIGHT: 15px;
+	LINE-HEIGHT: 15px;
+	font-family:Arial, Helvetica, sans-serif;
+	width: 135px;
+}
+
+INPUT.normal1{
+	BACKGROUND: url(../images/search_input.gif);
+	border:1px solid #a0b700;
+	color:#657a7d;
+	FONT-SIZE: 12px;
+	FONT-STYLE: normal;
+	FONT-VARIANT: normal;
+	FONT-WEIGHT: normal;
+	HEIGHT: 15px;
+	LINE-HEIGHT: 15px;
+	font-family:Arial, Helvetica, sans-serif;
+	width: 100px;
+}
+
+INPUT.buttonface{
+	BACKGROUND: #FFFFFF url(../images/buttonface_1.gif);
+	border:none #FFFFFF;
+	COLOR: #235158;
+	FONT-SIZE: 12px;
+	FONT-STYLE: normal;
+	FONT-VARIANT: normal;
+	FONT-WEIGHT: normal;
+	HEIGHT: 19px;
+	LINE-HEIGHT: 19px;
+	font-family:Arial, Helvetica, sans-serif;
+	width: 67px;
+}
+
+INPUT.button_search{
+	BACKGROUND: #FFFFFF url(../images/top_nav/search_go.gif);
+	border:none #FFFFFF;
+	COLOR: #235158;
+	FONT-SIZE: 12px;
+	FONT-STYLE: normal;
+	FONT-VARIANT: normal;
+	FONT-WEIGHT: normal;
+	HEIGHT: 23px;
+	LINE-HEIGHT: 23px;
+	font-family:Arial, Helvetica, sans-serif;
+	width: 28px;
+}
+
+
+input.smallInput{
+	border:1px solid #03185b;
+	FONT-SIZE: 9pt;
+	FONT-STYLE: normal;
+	FONT-VARIANT: normal;
+	FONT-WEIGHT: normal;
+	HEIGHT: 18px;
+	LINE-HEIGHT: normal;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	color: #373C64;
+	background-color: #FFFFFF;
+	width: 110px;
+}
+
+.select { 
+    font-color: 657a7d#; 
+	HEIGHT: 20px;
+	LINE-HEIGHT: 9px;
+	font-size: 12px; 
+	font-family: Arial, Geneva, Helvetica; 
+    border:1px solid #a0b700;
+ }
+ 
+.select1 { 
+    font-color: 657a7d#; 
+	width: 170px;
+	HEIGHT: 20px;
+	LINE-HEIGHT: 9px;
+	font-size: 12px; 
+	font-family: Arial, Geneva, Helvetica; 
+    border:1px solid #a0b700;
+ }
+ 
+.select2 { 
+    font-color: 657a7d#; 
+	width: 135px;
+	HEIGHT: 20px;
+	LINE-HEIGHT: 9px;
+	font-size: 12px; 
+	font-family: Arial, Geneva, Helvetica; 
+    border:1px solid #a0b700;
+ }
+#copyright{
+	font-size: 12px; 
+}

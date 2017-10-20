@@ -1,0 +1,43 @@
+/** 
+*    Copyright 2014 BUPT. 
+**/ 
+package com.sds.securitycontroller.knowledge;
+
+public enum KnowledgeType {
+
+	// cloud domain 
+	CLOUD_TENANT,
+	CLOUD_USER,
+	CLOUD_NETWORK,
+	CLOUD_SUBNET,
+	CLOUD_ROUTER,
+	CLOUD_PORT,
+	CLOUD_VM,
+	CLOUD_VLAN,
+	CLOUD_VLAN_MAP,
+	CLOUD_VIFPORT,
+	// network domain 
+	NETWORK_CONTROLLER,
+	NETWORK_TOPOLOGY,
+	NETWORK_SWITCH,
+	NETWORK_SWITCH_PORT,
+	NETWORK_DEVICE,
+	NETWORK_FLOW_TABLE,
+	NETWORK_FLOW,
+	NETWORK_FLOW_COMMAND,// command
+	// security domain
+	SECURITY_DEVICE,
+	SECURITY_APP,
+	SECURITY_DEV_TOPOLOGY,
+	SECURITY_VULNERABILITY,
+	// external domain
+	EXT_MACHINE,
+	EXT_APP,
+	EXT_FILE,
+	EXT_URL,
+	// physical domain
+	PHYSICAL_USER,
+	PHYSICAL_DEVICE,
+	
+	UNDEFINED
+}

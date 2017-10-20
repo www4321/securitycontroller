@@ -1,0 +1,81 @@
+securitycontroller.modules = com.sds.securitycontroller.app.manager.AppManager,\
+com.sds.securitycontroller.service.registry.RegistryManager,\
+com.sds.securitycontroller.access.manager.AccessControlManager,\
+com.sds.securitycontroller.asset.manager.AssetManager,\
+com.sds.securitycontroller.cloud.manager.OpenstackApiAgent,\
+com.sds.securitycontroller.command.CommandPusher,\
+com.sds.securitycontroller.device.manager.DeviceManager,\
+com.sds.securitycontroller.event.manager.MQEventScheduler,\
+com.sds.securitycontroller.flow.manager.FlowMonitor,\
+com.sds.securitycontroller.flow.manager.FlowPollingService,\
+com.sds.securitycontroller.knowledge.cloud.agent.OpenstackClient,\
+com.sds.securitycontroller.knowledge.globaltraffic.analyzer.GlobalTrafficAnalyzer,\
+com.sds.securitycontroller.knowledge.manager.KnowledgeBaseManager,\
+com.sds.securitycontroller.knowledge.networkcontroller.agent.NetworkcontrollerAgent,\
+com.sds.securitycontroller.knowledge.physical.agent.PhysicalUserAgent,\
+com.sds.securitycontroller.log.manager.LogManager,\
+com.sds.securitycontroller.policy.resolver.PolicyResolver,\
+com.sds.securitycontroller.reputation.manager.ReputationManager,\
+com.sds.securitycontroller.restserver.RestApiServer,\
+com.sds.securitycontroller.storage.jdbc.JDBCSqlStorageSource,\
+com.sds.securitycontroller.storage.mongodb.MongoDBStorageSource,\
+com.sds.securitycontroller.data.manager.DataManager, \
+com.sds.securitycontroller.threadpool.ThreadPool
+securitycontroller.generalparam.nchost = http://nc.research.intra.sds.com:8081
+securitycontroller.generalparam.iaashost = http://os.research.intra.sds.com
+securitycontroller.generalparam.scdir = /usr/src/securitycontroller
+com.sds.securitycontroller.restserver.RestApiServer.port = 8888
+com.sds.securitycontroller.core.SecurityControllerProvider.scport = 7777
+com.sds.securitycontroller.storage.jdbc.JDBCSqlStorageSource.dbtype = mysql
+com.sds.securitycontroller.storage.jdbc.JDBCSqlStorageSource.dbhost = 10.210.77.20
+com.sds.securitycontroller.storage.jdbc.JDBCSqlStorageSource.dbport = 3306
+com.sds.securitycontroller.storage.jdbc.JDBCSqlStorageSource.dbname = securitycontroller
+com.sds.securitycontroller.storage.jdbc.JDBCSqlStorageSource.dbuser = root
+com.sds.securitycontroller.storage.jdbc.JDBCSqlStorageSource.dbpass = 159753
+com.sds.securitycontroller.storage.mongodb.MongoDBStorageSource.dbhost = db.research.intra.sds.com
+com.sds.securitycontroller.storage.mongodb.MongoDBStorageSource.dbport = 27017
+com.sds.securitycontroller.storage.mongodb.MongoDBStorageSource.dbname = securitycontroller
+com.sds.securitycontroller.flow.manager.FlowPollingService.flowUrl = [nchost]/wm/core/switch/[sw]/flow/json
+com.sds.securitycontroller.flow.manager.FlowPollingService.switchUrl = [nchost]/wm/core/controller/switches/json
+com.sds.securitycontroller.flow.manager.FlowPollingService.pollingInterval = 3
+com.sds.securitycontroller.flow.manager.FlowPollingService.pollingFromSeperateSW = false
+com.sds.securitycontroller.flow.manager.FlowPollingService.saveFlowsToDB = true
+com.sds.securitycontroller.flow.manager.FlowPollingService.dbdriver = com.sds.securitycontroller.storage.mongodb.MongoDBStorageSource
+com.sds.securitycontroller.flow.manager.FlowMonitor.mode = local
+com.sds.securitycontroller.flow.manager.FlowMonitor.processorCount = 6
+com.sds.securitycontroller.flow.manager.FlowMonitor.pusherCount = 6
+com.sds.securitycontroller.flow.manager.FlowMonitor.enableMonitoringWithoutSubscriptions = false
+com.sds.securitycontroller.flow.manager.FlowMonitor.enableHistoryCacheMonitoring = false
+com.sds.securitycontroller.flow.manager.FlowMonitor.pushingResult = true
+com.sds.securitycontroller.flow.manager.FlowMonitor.builtInADSPolicyGenerator = false
+com.sds.securitycontroller.flow.manager.FlowMonitor.historyCacheTime = 60
+com.sds.securitycontroller.flow.manager.FlowMonitor.enableTrafficOverseeing = false
+com.sds.securitycontroller.flow.manager.FlowMonitor.scriptBase = [scdir]/script/
+com.sds.securitycontroller.flow.manager.FlowMonitor.dbdriver = com.sds.securitycontroller.storage.mongodb.MongoDBStorageSource
+com.sds.securitycontroller.app.manager.AppManager.dbdriver = com.sds.securitycontroller.storage.jdbc.JDBCSqlStorageSource
+com.sds.securitycontroller.policy.resolver.PolicyResolver.commandUrl = [nchost]/wm/securitycontrolleragent/policyaction
+com.sds.securitycontroller.policy.resolver.PolicyResolver.localCommandPusher = true
+com.sds.securitycontroller.knowledge.networkcontroller.agent.NetworkcontrollerAgent.nchost = [nchost]
+com.sds.securitycontroller.knowledge.cloud.agent.OpenstackClient.authUrl = [iaashost]:35357/v2.0
+com.sds.securitycontroller.knowledge.cloud.agent.OpenstackClient.quantumUrl = [iaashost]:9696/v2.0
+com.sds.securitycontroller.knowledge.cloud.agent.OpenstackClient.novaUrl = [iaashost]:8774/v2
+com.sds.securitycontroller.knowledge.cloud.agent.OpenstackClient.cloudAgentCommandUrl = [nchost]/wm/securitycontrolleragent/policyaction
+com.sds.securitycontroller.knowledge.physical.agent.PhysicalUserAgent.userManagerHost = http://admin.byod.research.intra.sds.com
+com.sds.securitycontroller.knowledge.physical.agent.PhysicalUserAgent.userManagerUri = /sessions/
+com.sds.securitycontroller.log.manager.LogManager.dbdriver = com.sds.securitycontroller.storage.mongodb.MongoDBStorageSource
+com.sds.securitycontroller.knowledge.globaltraffic.analyzer.GlobalTrafficAnalyzer.dbdriver = com.sds.securitycontroller.storage.jdbc.JDBCSqlStorageSource
+com.sds.securitycontroller.knowledge.globaltraffic.analyzer.GlobalTrafficAnalyzer.recordInterval = 3
+com.sds.securitycontroller.service.registry.RegistryManager.registerInterval = 10
+com.sds.securitycontroller.access.manager.AccessControlManager.strategy=radac
+com.sds.securitycontroller.reputation.manager.ReputationManager.strategy=ds
+com.sds.securitycontroller.data.manager.DataManager.espc_dbdriver = com.sds.securitycontroller.storage.jdbc.JDBCSqlStorageSource
+com.sds.securitycontroller.data.manager.DataManager.sc_dbdriver = com.sds.securitycontroller.storage.mongodb.MongoDBStorageSource 
+com.sds.securitycontroller.data.manager.DataManager.dbtype = postgresql
+com.sds.securitycontroller.data.manager.DataManager.dbhost = 10.65.130.11
+com.sds.securitycontroller.data.manager.DataManager.dbport = 5432
+com.sds.securitycontroller.data.manager.DataManager.dbname = nsc 
+com.sds.securitycontroller.data.manager.DataManager.dbuser = nsc 
+com.sds.securitycontroller.data.manager.DataManager.dbpass = nsc 
+com.sds.securitycontroller.asset.manager.AssetManager.record_dbdriver=com.sds.securitycontroller.storage.jdbc.JDBCSqlStorageSource
+com.sds.securitycontroller.asset.manager.AssetManager.asset_dbdriver=com.sds.securitycontroller.storage.jdbc.JDBCSqlStorageSource
+

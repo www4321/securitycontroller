@@ -1,0 +1,11 @@
+hostName = controller 
+zooKeeperHost = 10.108.171.181
+ampqHost = 10.108.171.181
+ampqPort = 5672
+ampqUserName = www1234
+ampqPassword = www1234
+topicExchangeName = topic_securitycontroller
+fanoutExchangeName = fanout_securitycontroller
+ncHost = http://10.108.171.181:8081
+
+

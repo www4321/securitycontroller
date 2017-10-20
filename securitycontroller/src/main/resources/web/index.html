@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Web Shell for Security Control Platform</title>
+    <link rel="stylesheet" href="styles/kendo.common.min.css" />
+    <link rel="stylesheet" href="styles/kendo.default.min.css" />
+    <link rel="stylesheet" href="styles/kendo.dataviz.min.css" />
+    <link rel="stylesheet" href="styles/kendo.dataviz.default.min.css" />
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/kendo.all.min.js"></script>
+    <script src="js/shell.js"></script>
+</head>
+<body>
+    
+        <h1>Web Shell for Security Control Platform</h1>
+        <div id="example">
+
+			<div id="shipping">
+                <label for="command" class="info">Input commands:</label>
+
+                <input id="command" />
+
+                <div class="hint">Start typing the commands</div>
+
+			</div>
+			<div id="result">
+			</div>
+
+            <script type="text/javascript">
+                var data = [];
+                $(document).ready(function () {
+                    fetchCommands();
+					$("#command").focus();
+                    //create AutoComplete UI component
+                    $("#command").kendoAutoComplete({
+                        dataSource: data,
+                        filter: "startswith",
+                        placeholder: "Input command...",
+                        separator: ""
+                    });
+                });
+                function refreshAutoComplete(){
+                    var autocomplete = $("#command").data("kendoAutoComplete");
+                    autocomplete.setDataSource(data);
+                    autocomplete.search($("#command").val());
+                }
+            </script>
+            <style scoped>
+                h1{
+                    font-style: bold;
+                    font-size: 1.9em;
+                    color: #7496d4;
+                }
+                .info {
+                    display: inline-block;
+                    line-height: 22px;
+                    padding: 0 5px 5px 0;
+                    color: #36558e;
+                }
+
+                #shipping {
+	                width: 800px;
+	                height: 100px;
+	                padding: 60px 0 0 10px;
+                    margin: 20px auto;
+                }
+
+                .k-autocomplete
+                {
+                    width: 650px;
+                    vertical-align: left;
+                }
+
+                .hint {
+                    line-height: 22px;
+                    color: #aaa;
+                    font-style: italic;
+                    font-size: .9em;
+                    color: #7496d4;
+	                padding-left: 160px;
+                }
+                #result {
+                    font-size: .9em;
+                    color: black;
+                    width: 100%;
+                    height: 800px;
+                    border:1px solid gray;
+                    display: inline-block;
+                    text-align: left;
+                }
+            </style>
+        </div>
+</body>
+</html>
